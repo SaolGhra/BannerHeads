@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "bannerheads",
+  "version": "${version}",
+  "name": "BannerHeads",
+  "description": "BannerHeads lets you put banners on your head!",
+  "authors": [
+    "SaolGhra"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/bannerheads/logo.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.saolghra.bannerheads.Bannerheads"
+    ]
+  },
+  "mixins": [
+    "bannerheads.mixins.json",
+    {
+      "config": "bannerheads.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
